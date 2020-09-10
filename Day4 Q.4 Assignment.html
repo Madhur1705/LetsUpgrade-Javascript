@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Q.4 </h1>
+
+
+    <script>
+        let personalInformation = [
+            {
+                name: "Madhur",
+                age: 20,
+                country: "India",
+                hobbies: ["Cricket", "Video Games", "Singing"],
+            },
+            {
+                name: "David",
+                age: 35,
+                country: "Australia",
+                hobbies: ["Swimming", "Watching movies", "Dancing"],
+            },
+            {
+                name: "Ricky",
+                age: 29,
+                country: "America",
+                hobbies: ["Basketball", "Watching Series", "Memicry"],
+            },
+            {
+                name: "Rohan",
+                age: 25,
+                country: "India",
+                hobbies: ["Hockey", "Programming", "Riding"],
+            },
+            {
+                name: "Rahul",
+                age: 28,
+                country: "India",
+                hobbies: ["Cricket", "Designing", "Drawing"],
+            },
+        ]
+
+        
+        function why(personalInformation) {
+            console.log("people age less than 30");
+            personalInformation.forEach(element => {
+                if (element.age < 30) {
+                    console.log(element);
+                }
+
+            });
+        }
+       console.log(why(personalInformation));
+
+        
+        
+        function what(personalInformation) {
+            console.log("people belongs to INDIA country ");
+            personalInformation.forEach(element => {
+                if (element.country == "India") {
+                    console.log(element);
+                }
+
+            });
+        }
+        what(personalInformation);
+    </script>
+</body>
+
+</html>

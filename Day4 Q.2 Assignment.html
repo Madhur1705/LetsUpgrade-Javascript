@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>   Q.2   </h1>
+
+    <label for="yes">First Input</label>
+    <div>
+        <input type="text" class="why" id="yes" placeholder="Enter the name">
+    </div><br><br>
+    <button onclick="change()">Change Name</button><br><br>
+    <label for="no">Second Input</label>
+    <div>
+        <input type="text" class="why" id="no" placeholder="Enter the copy">
+    </div>
+
+    <script>
+        function change() {
+            const ele = document.getElementById("yes").value;
+            document.getElementById("no").value = ele;
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
