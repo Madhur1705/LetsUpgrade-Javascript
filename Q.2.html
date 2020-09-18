@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            height: 500px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 32px;
+
+        }
+
+        th {
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;
+        }
+
+        td {
+            text-align: center;
+            padding: 10px;
+            background-color: burlywood;
+        }
+
+        #search {
+            height: 30px;
+            background-color: cyan;
+            width: 400px;
+        }
+
+        .class {
+            display: inline-block;
+            text-indent: 20rem;
+        }
+
+        .add{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h1><strong>Bus Details</strong></h1>
+    <div class="form">
+        <div class="add">
+            <form>
+                <input type="text" required placeholder="Enter The Name" id="name">
+                <input type="text" required placeholder="Enter The Source" id="source">
+                <input type="text" required placeholder="Enter The Destination" id="destination">
+                <input type="text" required placeholder="Enter The Number" id="number">
+                <input type="number" required placeholder="Enter The Passangers Capacity" id="passangerscapacity">
+                <button type="submit" onclick="adddata(event)">Add New Bus Details</button>
+            </form>
+        </div>
+        <div class="class"><input type="text" placeholder="Search By Source And Destination" id="search" onkeyup="searchbus()"></div>
+
+        <table border="2" cellspacing="0" class="table">
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Number</th>
+                    <th>Passanger Capacity</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+
+
+    <script src="Q.2.js"></script>
+</body>
+
+</html>

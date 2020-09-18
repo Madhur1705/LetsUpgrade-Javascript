@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rank{
+            height: 500px;
+            width: 100%;
+            display: inline-block;
+        }
+        .table{
+            width: 100%;
+            margin-top: 32px;
+            
+        }
+        th{
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;
+        }
+        td{
+            text-align: center;
+            padding: 10px;
+            background-color:burlywood;
+        }
+
+        #search{
+            height: 30px;
+            background-color: cyan;
+        }
+        .form{
+            display: inline-block;
+            text-indent: 20rem;
+        }
+        .delete{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong> Personal Information</strong></h1>
+    <div class="rank">
+        <div class="form">
+            
+            <input type="text" placeholder="Search by name and city" id="search" onkeyup="searchBync()">
+        </div>
+        <table border="2" cellspacing="0" class="table"> 
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Delete Row</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src="Q.1.js"></script>
+</body>
+</html>
