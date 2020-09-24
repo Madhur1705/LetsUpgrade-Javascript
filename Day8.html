@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            height: 70px;
+            width: 100%;
+            background-color: lightgrey;
+            line-height: 70px;
+        }
+
+        h1 {
+            margin-left: 50px;
+            display: inline-block;
+            width: 30%;
+        }
+
+        .search {
+            height: 70px;
+            width: 60%;
+
+            display: inline-block;
+        }
+
+        .search input {
+            height: 40px;
+            width: 100%;
+            text-indent: 20px;
+            border-radius: 5px;
+            border: 2px solid grey;
+            outline: none;
+        }
+
+        .products {
+            width: 100%;
+            height: auto;
+            /* background-color: darkgrey; */
+
+        }
+
+        .productwrapper {
+            height: auto;
+            width: 70%;
+            /* background-color: green; */
+            margin-left: 190px;
+            margin-bottom: 40px;
+        }
+
+        .product {
+            height: auto;
+            width: 20%;
+            /* background-color: red; */
+            display: inline-block;
+            margin-top: 6%;
+            margin-left: 12%;
+            border: 1px solid black;
+
+        }
+
+        .prodimg {
+            height: 250px;
+            width: 100%;
+            /* background-color: darkkhaki; */
+            overflow: hidden;
+        }
+
+        .product h3,
+        .product p {
+            padding: 5px;
+            padding-left: 10px;
+        }
+
+        .product p {
+            color: grey;
+        }
+
+        button {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Dynamic Shopping</h1>
+        <div class="search">
+            <input type="search" placeholder="Search for product" onkeyup="searchProduct(this.value)" id="searchvalue">
+        </div>
+    </div>
+    <div class="products">
+        <div class="productwrapper" id="productwrapper">
+
+
+        </div>
+
+    </div>
+
+
+    <div class="products">
+        <div class="productwrapper" id="cart">
+            <h1>Cart</h1>
+        </div>
+
+
+    </div>
+
+
+    <script src="Day8.js"></script>
+</body>
+
+</html>
